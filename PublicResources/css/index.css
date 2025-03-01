@@ -1,0 +1,58 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1, h2, p, a, label{
+    color: #393939;
+}
+
+#top{
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+#events{
+    display: flex;
+    gap: 20px;
+    max-width: 1600px;
+}
+
+#events img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+#events h2{
+    margin-bottom: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+#events a{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1;
+}
+
+#events a:hover{
+    transform: scale(1.03);
+}
+
+#events a:hover h2{
+    color: #FF3B3F;
+}
+
+#content{
+    padding: 0 5%;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

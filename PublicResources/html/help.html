@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>More about events</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/help.css"> <!--link the appropriate stylesheet cus this is custom pr event??-->
+    <script src="https://kit.fontawesome.com/f5f1119858.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <section id="helpPage"> 
+        <section id="menu">
+            <div class="dropdownContent">
+                <svg class="svgButtons" id="closeMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg>
+                <a href="/" id="goBackLink">Go back</a>
+                <a href="./help.html">Help</a>
+            </div>
+            <svg class="svgButtons" id="openMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
+            <div id="text"></div> 
+            <a href="#howToUse">- How to use the program</a>
+            <a href="#dataFromSim">- Data from the simulation</a>
+            <a href="#liveData">&emsp; - Live data</a>
+            <a href="#resultPageData">&emsp; - Result page data</a>
+            <a href="#timestamps">&emsp; - Timestamps</a>
+        </section>
+        <section id="helpInformation">
+            <h2 id="howToUse">How to use the program:</h2>
+            <p>
+                <b>"Amount of people" slider:</b>
+                <br>
+                The user can utilize the slider to decide how many people should be inserted into the simulation, by pulling the blue dot from side to side. The number can also be changed using the number box underneath the slider, for a more precise amount.
+                <br><br>
+                
+                <b>"Insert Barriers" button:</b>
+                <br>
+                A toggle button, that the user can utilize to drag and draw barriers across the simulation. To insert the barriers, the button must be pressed, and when the user is done inserting barriers, the button must be pressed again before the simulation can be started.
+                <br>
+                The barriers are used to guide/direct/contain the people in the simulation.
+                <br><br>
+                
+                <b>"Reset Simulation" button:</b>
+                <br>
+                When the button is pressed, all of the simulation data will be reset, and barriers and people will be cleared from the simulation.
+                <br><br>
+
+                <b>"Start/Stop Simulation" button:</b>
+                <br>
+                When the user is ready to start the simulation, they can press the blue "Start Simulation" button. The button hereafter turns red, and becomes the "Stop Simulation" button. This button can be pressed when the user wants to stop the simulation, and the result page will pop up.
+                <br><br>
+
+                <b>"Pause/Play" button:</b>
+                <br>
+                A button that allows the user to pause and play the simulation while it is running, without resetting it.
+            </p>
+            <h2 id="dataFromSim">Data from the simulation:</h2>
+            <h3 id="liveData">Live data:</h3>
+            <p>
+                <b>Current Max Density:</b>
+                <br>
+                Shows the current maximum density in the simulation, which is meassured in people/m<sup>2</sup>.
+                <br><br>
+
+                <b>People In Simulation:</b>
+                <br>
+                Shows how many living people are currently in the simulation.
+                <br><br>
+
+                <b>Number Of Deaths:</b>
+                <br>
+                Shows the amount of people who are currently dead in the simulation.
+                <br><br>
+
+                <b>Time:</b>
+                <br>
+                Shows the current runtime of the simulation.
+            </p>
+            <h3 id="resultPageData">Result page data:</h3>
+            <p>
+                <b>Max Density Reached:</b>
+                <br>
+                Shows the maximum density the simulation reached during the full runtime. The density is meassured in people/m<sup>2</sup>.
+                <br><br>
+
+                <b>People Who Left:</b>
+                <br>
+                Shows the amount of people who successfully left the simulation without dying.
+                <br><br>
+
+                <b>Simulation Run Time:</b>
+                <br>
+                Shows the total amount of time the simulation took.
+                <br><br>
+
+                <b>People Generated:</b>
+                <br>
+                Shows the amount of people that had been generated before the simulation stopped.
+                <br><br>
+
+                <b>Injured People:</b>
+                <br>
+                Shows the total amount of people who got injured without dying during the simulation.
+                <br><br>
+
+                <b>Deaths:</b>
+                <br>
+                Shows the amount of people who died during the simulation.
+            </p>
+            <h3 id="timestamps">Timestamps:</h3>
+            <p>
+                <b>Max Density in the Simulation:</b>
+                <br>
+                A timestamp that shows when a new maximum density has been reached. The density is meassured in people/m<sup>2</sup>.
+                <br><br>
+
+                <b>Injuries:</b>
+                <br>
+                A timestamp that shows when the 1st, the 10th, the 50th, the 100th, and 500th person has been injured during the simulation.
+                <br><br>
+
+                <b>Deaths:</b>
+                <br>
+                A timestamp that shows when the 1st, the 10th, the 50th, the 100th, and 500th person has died during the simulation.
+                <br><br>
+
+                <b>All People Have Been Generated:</b>
+                <br>
+                A timestamp that shows when all of the people have been generated.
+            </p>
+        </section>
+    </section>
+    <script type="module" src="../scripts/help.js"></script>
+</body> 

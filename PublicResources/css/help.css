@@ -1,0 +1,123 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2, h3, p, a, label {
+    color: white;
+}
+
+/*The content of the entire page including the menu*/
+#helpPage {
+    display: flex;
+}
+
+/*The grey bar on the left*/
+#menu {
+    background-color: #545454;
+    padding: 0 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    position: relative;
+    height: 100vh;
+}
+
+#menu h1 {
+    padding: 20px 0;
+    
+}
+
+#menu h1, #menu p {
+    margin-top: 30px;
+    color: white;
+}
+
+/*All of the buttons*/
+.svgButtons{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+}
+
+/*Dropdown menu (Opened burger bar)*/
+.dropdownContent {
+    position: absolute;
+    left: 0;
+    width: 0px;
+    background-color: #f9f9f9;
+    z-index: 9;
+    flex-direction: column;
+    display: flex;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+/*The burger bar*/
+#openMenu {
+    color: white;
+    position: absolute;
+    top: 20px;
+}
+
+#openMenu:hover {
+    color: #c5c5c5;
+}
+
+/*The x to close the burger bar*/
+#closeMenu {
+    color: #545454;
+    padding: 12px 16px;
+    position: static;
+}
+
+#closeMenu:hover {
+    color: #fc3136;
+}
+
+/* Links inside menu */
+.dropdownContent a {
+    padding: 12px 16px;
+    color: #545454 !important;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.dropdownContent a:hover {
+    background-color: #3c9afc;
+}
+
+.dropdownContent.open {
+    width: 100%;
+}
+
+/*The content of page (The white page with text)*/
+#helpInformation {
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+#helpInformation p {
+    color: #444444 !important;
+    padding-bottom: 30px;
+}
+
+#helpInformation h2 {
+    color: #545454;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#helpInformation h3 {
+    color: #545454;
+    font-size: 20px;
+}

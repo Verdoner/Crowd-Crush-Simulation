@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+<div id="content">
+    <div id="top">
+        <h1>Crowd crush simulator</h1>
+        <p>
+            This crowd crush simulation is the product of a project done by a group of 2-semester software students at Aalborg University.
+            The focus of this project is to make simulations of previous crowd crush events, by researching and analyzing these events and comparing them. 
+            Giving the user the ability to customize the given events, it can help to better understand how important certain tools can be in aiding in preventing these deadly crowd crush events. 
+        </p>
+    </div>
+
+    <!-- Three different sections are made with a clickable picture in each section.
+    Each picture links to the simulation page and passes a url parameter with it.
+    The url parameter tells the program which picture has been clicked on: ?page=xxxxx -->
+    <div id="events">
+        <a id="hajj" href="html/simulation.html?page=hajj">
+            <img alt="Picture of Hajj" src="img/800px-Jamaraat_Bridge_2.jpg">
+            <!--Image taken from here: https://commons.wikimedia.org/wiki/File:Jamaraat_Bridge_2.jpg-->
+            <h2>Hajj</h2>
+            <p>
+                Over the last 30+ years, several incidents of crowd crushes have occurred during the Muslim pilgrimage, Hajj. This simulation focuses on the event of 2006 where 346 pilgrims died and 289 injured. 
+            </p>
+        </a>
+
+        <a id="loveParade" href="html/simulation.html?page=loveParade">
+            <img alt="Picture of Love Parade" src="img/LoveParadePicture.jpg">
+            <!--Image taken from here: https://www.spiegel.de/international/germany/death-toll-rises-to-19-focus-shifts-to-organizers-after-love-parade-stampede-a-708383.html#fotostrecke-6e271141-0001-0002-0000-000000057501-->
+            <h2>Love Parade</h2>
+            <p>
+                Love Parade is an electronic music and dance festival in Germany which was last held in 2010. This event had 21 casulties and more than 600 injured, due to inadequate and overcrowded exit and entry ways.  
+            </p>
+        </a>
+
+        <a id="itaewon" href="html/simulation.html?page=itaewon">
+            <img alt="Picture of Itaewon" src="img/Itaewon.jpg">
+            <!--Image taken from here: https://www.mirror.co.uk/news/world-news/breaking-seoul-halloween-stampede-sees-28352047-->
+            <h2>Itaewon</h2>
+            <p>
+                In 2022 a Halloween event turned deadly when officials where unprepared for the amount of people entering the streets of Seoul, resulting in 159 deaths in the tightly packed Itaewon district.
+            </p>
+        </a>
+    </div>
+</div>
+</body>
